@@ -1,1 +1,8 @@
-<p>movies works!</p>
+<div class="container-fluid">
+    <h2>Movies</h2>
+    <div class="grid">
+        <div class="col-2 md:col-3 lg:col-6" *ngFor="let movie of movies">
+            <movie-item [itemData]="movie"></movie-item>
+        </div>
+    </div>
+</div>
