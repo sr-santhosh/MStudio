@@ -16,7 +16,6 @@ import { MovieItemComponent } from './components/movie-item/movie-item.component
 import { MovieComponent } from './pages/movie/movie.component';
 import { VideoEmbededComponent } from './components/video-embeded/video-embeded.component';
 import { GenresComponent } from './pages/genres/genres.component';
-import { PaginatorModule } from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { PaginatorModule } from 'primeng/paginator';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    PaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
