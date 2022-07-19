@@ -10,10 +10,13 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SliderComponent } from './components/slider/slider.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemsBannerComponent } from './components/items-banner/items-banner.component';
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
-// import {PaginatorModule} from 'primeng/paginator';
+import { MovieComponent } from './pages/movie/movie.component';
+import { VideoEmbededComponent } from './components/video-embeded/video-embeded.component';
+import { GenresComponent } from './pages/genres/genres.component';
+import { PaginatorModule } from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -24,19 +27,21 @@ import { MovieItemComponent } from './components/movie-item/movie-item.component
     MoviesComponent,
     SliderComponent,
     ItemsBannerComponent,
-    MovieItemComponent
-  
+    MovieItemComponent,
+    MovieComponent,
+    VideoEmbededComponent,
+    GenresComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule ,
-    ReactiveFormsModule, 
-    HttpClientModule
-    // PaginatorModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    PaginatorModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
