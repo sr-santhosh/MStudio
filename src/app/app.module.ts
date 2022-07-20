@@ -16,7 +16,7 @@ import { MovieItemComponent } from './components/movie-item/movie-item.component
 import { MovieComponent } from './pages/movie/movie.component';
 import { VideoEmbededComponent } from './components/video-embeded/video-embeded.component';
 import { GenresComponent } from './pages/genres/genres.component';
-
+import { PrimengModule } from './shared/primeng/primeng.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +38,7 @@ import { GenresComponent } from './pages/genres/genres.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    PrimengModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
